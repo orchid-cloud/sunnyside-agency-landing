@@ -1,0 +1,37 @@
+@use 'util' as u;
+
+:root {
+  //colors
+
+  --c-white-bg: #fffbf8;
+  --c-white-text: #fffeff;
+  --c-darkblue-text: #233042;
+  --c-gray-text: #cccbcd;
+  --c-lightgray-text: #fcfbf7;
+  --c-green-text: #559a8b;
+  --c-lightgreen-bg: #98d8ca;
+  --c-yellow-border: #fef0b7;
+  --c-pink-border: #ffdad2;
+
+  //fonts
+  --f-xl: #{clamp(
+      u.rem(32),
+      1.6038732394366197rem + 1.6901408450704223vw,
+      u.rem(50)
+    )};
+
+  --f-l: #{clamp(
+      u.rem(28),
+      1.573943661971831rem + 0.7511737089201878vw,
+      u.rem(36)
+    )};
+
+  --f-m: #{clamp(
+      u.rem(20),
+      1.5880281690140845rem + -0.3755868544600939vw,
+      u.rem(24)
+    )};
+
+  --f-s: u.rem(11);
+  --f-body: u.rem(16);
+}
