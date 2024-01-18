@@ -1,0 +1,37 @@
+@use '../util' as u;
+
+.header {
+  &__logo {
+    width: u.rem(125);
+
+    @media (width >= u.rem(1110)) {
+      width: u.rem(180);
+    }
+  }
+
+  &__link {
+    color: var(--c-gray-text);
+    font-size: u.rem(20);
+    line-height: 1.3;
+
+    @media (width >= u.rem(1110)) {
+      font-size: var(--f-body);
+      color: var(--c-white-text);
+    }
+  }
+
+  &__btn {
+    background-color: var(--c-yellow-button);
+    color: var(--c-darkblue-text);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: u.rem(20);
+    line-height: 1.3;
+    text-transform: uppercase;
+    border: none;
+
+    padding-block: u.rem(20);
+    padding-inline: u.rem(30);
+    border-radius: u.rem(35);
+  }
+}
