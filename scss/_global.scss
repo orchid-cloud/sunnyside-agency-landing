@@ -5,8 +5,8 @@
 
   --c-white-bg: #fffbf8;
   --c-white-text: #fffeff;
-  --c-darkblue-text: #233042;
-  --c-gray-text: #cccbcd;
+  --c-darkblue-text: #24303e;
+  --c-gray-text: #9e9ca4;
   --c-lightgray-text: #fcfbf7;
   --c-green-text: #559a8b;
   --c-lightgreen-bg: #98d8ca;
@@ -92,6 +92,7 @@ h3 {
 
 p {
   color: var(--c-gray-text);
+  font-weight: 600;
 }
 
 a {
@@ -100,7 +101,6 @@ a {
 
 img {
   display: block;
-  // width: 100%;
   height: auto;
 }
 
@@ -113,6 +113,18 @@ li {
   list-style-type: none;
 }
 
-body {
-  background-color: lightcyan;
+// body {
+//   background-color: lightgreen;
+// }
+
+.flex {
+  display: flex;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
 }

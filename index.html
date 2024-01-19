@@ -14,49 +14,54 @@
   </head>
   <body>
     <header class="header">
-      <a href="/">
-        <img
-          class="header__logo"
-          src="/images/logo.svg"
-          alt="Homepage"
-          width="180"
-          125
-          height="35"
-          20
-        />
-      </a>
-      <nav>
-        <ul>
-          <li><a class="header__link" href="">About</a></li>
-          <li><a class="header__link" href="">Services</a></li>
-          <li><a class="header__link" href="">Projects</a></li>
-          <li><button class="header__btn">Contact</button></li>
-        </ul>
-      </nav>
-      <h1>We are creatives</h1>
-      <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
-        <g
-          stroke="#FFF"
-          stroke-width="6"
-          fill="none"
-          fill-rule="evenodd"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M18 3v100M3 95.484l15 15 15-15" />
-        </g>
-      </svg>
-      <picture>
+      <div class="header__links flex j-between a-center">
+        <a href="/">
+          <img
+            class="header__logo"
+            src="/images/logo.svg"
+            alt="Homepage"
+            width="180"
+            125
+            height="35"
+            20
+          />
+        </a>
+        <nav>
+          <ul class="header__nav flex a-center">
+            <li><a class="header__link" href="">About</a></li>
+            <li><a class="header__link" href="">Services</a></li>
+            <li><a class="header__link" href="">Projects</a></li>
+            <li><button class="header__btn">Contact</button></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__headline flex a-center">
+        <h1>We are creatives</h1>
+        <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+          <g
+            stroke="#FFF"
+            stroke-width="6"
+            fill="none"
+            fill-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 3v100M3 95.484l15 15 15-15" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- <picture>
         <source
           media="(min-width: 1024px)"
           srcset="/images/desktop/image-header.jpg"
         />
         <img
-          class="footer__image"
+          class="header__image"
           src="/images/mobile/mb-image-header.jpg"
           alt="Half of an orange on a blue background"
         />
-      </picture>
+      </picture> -->
     </header>
 
     <main>
@@ -66,11 +71,15 @@
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-transform.jpg"
+              width="720"
+              height="600"
             />
             <img
               class="feature__image"
               src="/images/mobile/mb-image-transform.jpg"
               alt="A whole egg on a yellow background"
+              width="750"
+              height="624"
             />
           </picture>
 
@@ -88,11 +97,15 @@
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-stand-out.jpg"
+              width="720"
+              height="600"
             />
             <img
               class="feature__image"
               src="/images/mobile/mb-image-stand-out.jpg"
               alt="A pink stem glass on a pink background"
+              width="750"
+              height="624"
             />
           </picture>
           <h2 class="feature__headline">Stand out to the right audience</h2>
@@ -108,12 +121,16 @@
           <picture>
             <source
               media="(min-width: 1024px)"
-              srcset="/images/desktop/image-grafic-design.jpg"
+              srcset="/images/desktop/image-graphic-design.jpg"
+              width="720"
+              height="600"
             />
             <img
               class="tools__image"
-              src="/images/mobile/mb-image-grafic-design.jpg"
+              src="/images/mobile/mb-image-graphic-design.jpg"
               alt="Cherry on a green background"
+              width="750"
+              height="624"
             />
           </picture>
           <h3 class="tools__heading">Graphic Design</h3>
@@ -128,11 +145,15 @@
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-photography.jpg"
+              width="720"
+              height="600"
             />
             <img
               class="tools__image"
               src="/images/mobile/mb-image-photography.jpg"
               alt="Tangerine on a blue background"
+              width="750"
+              height="624"
             />
           </picture>
           <h3 class="tools__heading">Photography</h3>
@@ -195,11 +216,15 @@
           <source
             media="(min-width: 1024px)"
             srcset="/images/desktop/image-gallery-milkbottles.jpg"
+            width="720"
+            height="894"
           />
           <img
             class="footer__image"
             src="/images/mobile/mb-image-gallery-milkbottles.jpg"
             alt="A row of white milkbottles with red caps on a blue sky and white clouds background"
+            width="376"
+            height="376"
           />
         </picture>
 
@@ -207,11 +232,15 @@
           <source
             media="(min-width: 1024px)"
             srcset="/images/desktop/image-gallery-orange.jpg"
+            width="720"
+            height="894"
           />
           <img
             class="footer__image"
             src="/images/mobile/mb-image-gallery-orange.jpg"
             alt="A piece of orange on a white plate with blue indentation on an orange background"
+            width="376"
+            height="376"
           />
         </picture>
 
@@ -219,11 +248,15 @@
           <source
             media="(min-width: 1024px)"
             srcset="/images/desktop/image-gallery-cone.jpg"
+            width="720"
+            height="894"
           />
           <img
             class="footer__image"
             src="/images/mobile/mb-image-gallery-cone.jpg"
             alt="Ice cream cone on a blue background"
+            width="376"
+            height="376"
           />
         </picture>
 
@@ -231,11 +264,15 @@
           <source
             media="(min-width: 1024px)"
             srcset="/images/desktop/image-gallery-sugarcubes.jpg"
+            width="720"
+            height="894"
           />
           <img
             class="footer__image"
             src="/images/mobile/mb-image-gallery-sugar-cubes.jpg"
             alt="A wall made of white sugarcubes with some holes on a pink background"
+            width="376"
+            height="376"
           />
         </picture>
       </div>

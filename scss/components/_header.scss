@@ -1,11 +1,36 @@
 @use '../util' as u;
 
 .header {
+  background-image: url(../../public/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__links {
+    flex-direction: column;
+    gap: u.rem(50);
+    padding-block: u.rem(50) u.rem(90);
+    padding-inline: u.rem(35);
+
+    @media (width >= u.rem(1110)) {
+      flex-direction: row;
+    }
+  }
+
   &__logo {
     width: u.rem(125);
 
     @media (width >= u.rem(1110)) {
       width: u.rem(180);
+    }
+  }
+
+  &__nav {
+    flex-direction: column;
+    gap: u.rem(50);
+
+    @media (width >= u.rem(1110)) {
+      flex-direction: row;
     }
   }
 
@@ -33,5 +58,20 @@
     padding-block: u.rem(20);
     padding-inline: u.rem(30);
     border-radius: u.rem(35);
+
+    @media (width >= u.rem(1110)) {
+      background-color: var(--c-white-text);
+      font-size: var(--f-body);
+    }
+  }
+
+  &__headline {
+    flex-direction: column;
+    gap: u.rem(50);
+    padding-block-end: clamp(
+      7.5rem,
+      2.438380281690141rem + 21.5962441314554vw,
+      21.875rem
+    );
   }
 }
