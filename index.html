@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./public/images/favicon-32x32.png" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunnyside Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,24 +50,12 @@
           </g>
         </svg>
       </div>
-
-      <!-- <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcset="/images/desktop/image-header.jpg"
-        />
-        <img
-          class="header__image"
-          src="/images/mobile/mb-image-header.jpg"
-          alt="Half of an orange on a blue background"
-        />
-      </picture> -->
     </header>
 
     <main>
-      <article>
-        <section class="feature">
-          <picture>
+      <article class="feature grid">
+        <section class="feature__transform">
+          <picture class="feature__picture-transform">
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-transform.jpg"
@@ -83,17 +71,19 @@
             />
           </picture>
 
-          <h2 class="feature__headline">Transform your brand</h2>
-          <p class="feature__description">
-            We are a tull-service creative agency specializing in helpin brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <a class="feature__link" href="">Learn more</a>
+          <div class="feature__description">
+            <h2 class="feature__headline">Transform your brand</h2>
+            <p>
+              We are a tull-service creative agency specializing in helpin
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a class="feature__link" href="">Learn more</a>
+          </div>
         </section>
 
-        <section class="feature">
-          <picture>
+        <section class="feature__stand">
+          <picture class="feature__picture-stand">
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-stand-out.jpg"
@@ -108,17 +98,20 @@
               height="624"
             />
           </picture>
-          <h2 class="feature__headline">Stand out to the right audience</h2>
-          <p class="feature__description">
-            Using a collaborative tormula of designers, researchers,
-            photographers, videographers, and copywriters, we'll build and
-            extend your brand in digital places.
-          </p>
-          <a class="feature__link" href="">Learn more</a>
+
+          <div class="feature__description">
+            <h2 class="feature__headline">Stand out to the right audience</h2>
+            <p>
+              Using a collaborative tormula of designers, researchers,
+              photographers, videographers, and copywriters, we'll build and
+              extend your brand in digital places.
+            </p>
+            <a class="feature__link stand-btn" href="">Learn more</a>
+          </div>
         </section>
 
-        <section class="tools">
-          <picture>
+        <section class="design">
+          <!-- <picture class="design__picture">
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-graphic-design.jpg"
@@ -126,22 +119,24 @@
               height="600"
             />
             <img
-              class="tools__image"
+              class="design__image"
               src="/images/mobile/mb-image-graphic-design.jpg"
               alt="Cherry on a green background"
               width="750"
               height="624"
             />
-          </picture>
-          <h3 class="tools__heading">Graphic Design</h3>
-          <p class="tools__description">
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients
-            attention.
-          </p>
+          </picture> -->
+          <div class="design__description">
+            <h3 class="design__heading">Graphic Design</h3>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients
+              attention.
+            </p>
+          </div>
         </section>
-        <section class="tools">
-          <picture>
+        <section class="photography">
+          <!-- <picture class="photography__picture">
             <source
               media="(min-width: 1024px)"
               srcset="/images/desktop/image-photography.jpg"
@@ -149,18 +144,20 @@
               height="600"
             />
             <img
-              class="tools__image"
+              class="photography__image"
               src="/images/mobile/mb-image-photography.jpg"
               alt="Tangerine on a blue background"
               width="750"
               height="624"
             />
-          </picture>
-          <h3 class="tools__heading">Photography</h3>
-          <p class="tools__description">
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
+          </picture> -->
+          <div class="photography__description">
+            <h3 class="photography__heading">Photography</h3>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
         </section>
       </article>
 
