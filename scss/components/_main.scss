@@ -30,6 +30,9 @@
       padding-block: u.rem(150);
       padding-inline: u.rem(130);
     }
+    & p {
+      padding-block: u.rem(40);
+    }
   }
 
   &__link {
@@ -81,10 +84,8 @@
   min-height: u.rem(600);
 
   &__description {
-    display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
     height: 100%;
     padding-block-end: u.rem(60);
   }
@@ -100,6 +101,9 @@
       padding-inline: u.rem(115);
     }
   }
+  &__heading {
+    margin-block-end: u.rem(30);
+  }
 }
 
 .photography {
@@ -110,10 +114,8 @@
   min-height: u.rem(600);
 
   &__description {
-    display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: center;
     height: 100%;
     padding-block-end: u.rem(60);
   }
@@ -132,5 +134,72 @@
 
   &__heading {
     color: var(--c-blue-text);
+    margin-block-end: u.rem(30);
+  }
+}
+
+.testimonials {
+  padding-block: u.rem(80);
+  padding-inline: u.rem(30);
+
+  @media (width >= u.em(1110)) {
+    padding: u.rem(150);
+  }
+  &__title {
+    font-family: 'Fraunces', serif;
+    color: var(--c-lightgray-text);
+    text-transform: uppercase;
+    letter-spacing: u.em(5);
+    text-align: center;
+    padding-block-end: u.rem(50);
+  }
+
+  &__clients {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: u.rem(60);
+    @media (width >= u.em(1110)) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto auto;
+    }
+  }
+}
+
+.testimonial {
+  &__MD,
+  &__COO,
+  &__BO {
+    gap: u.rem(50);
+    @media (width >= u.em(1110)) {
+      grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+      grid-row: 1 / -1;
+    }
+  }
+
+  &__image {
+    width: u.rem(144);
+    height: u.rem(144);
+    border-radius: 50%;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__sign {
+    text-align: center;
+  }
+
+  &__name {
+    font-family: 'Fraunces', serif;
+    color: var(--c-darkblue-text);
+    margin-block-end: u.rem(20);
+  }
+
+  &__position {
+    color: var(--c-lightgray-text);
+    font-weight: 600;
+    text-transform: capitalize;
   }
 }

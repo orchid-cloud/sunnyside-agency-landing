@@ -7,7 +7,7 @@
   --c-white-text: #fffeff;
   --c-darkblue-text: #24303e;
   --c-gray-text: #84828b;
-  --c-lightgray-text: #91d3c5;
+  --c-lightgray-text: #a6a6a7;
   --c-green-text: #205249;
   --c-lightgreen-bg: #98d8ca;
   --c-blue-text: #1c5974;
@@ -69,7 +69,7 @@ h1,
 h2,
 h3,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 h1 {
@@ -129,4 +129,8 @@ li {
 
 .grid {
   display: grid;
+}
+
+.j-items-center {
+  justify-items: center;
 }
