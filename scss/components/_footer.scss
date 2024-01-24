@@ -1,0 +1,35 @@
+@use '../util' as u;
+
+.footer {
+  &__images {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto;
+
+    @media (width >= u.em(1110)) {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: auto;
+    }
+  }
+
+  &__contacts {
+    background-color: var(--c-lightgreen-bg);
+    padding-block: u.rem(70);
+    padding-inline: u.rem(35);
+    flex-direction: column;
+    gap: u.rem(50);
+  }
+
+  &__logo {
+    width: u.rem(180);
+    height: u.rem(35);
+  }
+
+  &__links {
+    color: var(--c-lightgreen-text);
+    gap: u.rem(50);
+  }
+
+  &__social {
+    gap: u.rem(20);
+  }
+}

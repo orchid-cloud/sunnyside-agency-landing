@@ -14,6 +14,7 @@
   --c-yellow-border: #fef0b7;
   --c-pink-border: #ffdad2;
   --c-yellow-button: #fed501;
+  --c-lightgreen-text: #2c7566;
 
   //fonts
   --f-xl: #{clamp(
@@ -133,4 +134,8 @@ li {
 
 .j-items-center {
   justify-items: center;
+}
+
+.j-content-center {
+  justify-content: center;
 }
