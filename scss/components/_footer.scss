@@ -25,11 +25,24 @@
   }
 
   &__links {
-    color: var(--c-lightgreen-text);
     gap: u.rem(50);
+
+    & a {
+      color: var(--c-lightgreen-text);
+
+      @media (width >= u.em(1110)) {
+        &:hover {
+          color: var(--c-white-text);
+        }
+      }
+    }
   }
 
   &__social {
     gap: u.rem(20);
+
+    & svg:hover path {
+      fill: var(--c-white-text);
+    }
   }
 }
