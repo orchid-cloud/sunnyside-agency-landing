@@ -24,11 +24,28 @@
             height="35"
           />
         </a>
-        <nav>
-          <ul class="header__nav flex a-center">
-            <li><a class="header__link" href="">About</a></li>
-            <li><a class="header__link" href="">Services</a></li>
-            <li><a class="header__link" href="">Projects</a></li>
+        <nav class="nav" aria-label="Site">
+          <button
+            id="btnToggle"
+            class="nav__toggle"
+            aria-labelledby="nav-label"
+            aria-expanded="false"
+          >
+            <span id="nav-label" hidden>Navigation</span>
+            <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+                fill="#FFF"
+                fill-rule="evenodd"
+                aria-hidden="true"
+              />
+            </svg>
+          </button>
+
+          <ul class="nav__content flex a-center">
+            <li><a class="nav__link" href="">About</a></li>
+            <li><a class="nav__link" href="">Services</a></li>
+            <li><a class="nav__link" href="">Projects</a></li>
             <li><button class="header__btn">Contact</button></li>
           </ul>
         </nav>

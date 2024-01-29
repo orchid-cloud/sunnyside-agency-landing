@@ -27,6 +27,7 @@
     justify-content: center;
     padding-block: 70px;
     padding-inline: 30px;
+    background-color: var(--c-white-bg);
 
     @media (width >= u.em(1110)) {
       align-items: start;
@@ -159,6 +160,7 @@
 }
 
 .testimonials {
+  background-color: var(--c-white-bg);
   padding-block: u.rem(80);
   padding-inline: u.rem(30);
 
