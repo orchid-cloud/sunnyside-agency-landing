@@ -28,6 +28,18 @@
       height: u.rem(340);
       background-color: var(--c-white-bg);
       padding-block: u.rem(50);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: u.rem(-20);
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: u.rem(20) u.rem(20) 0 0;
+        border-color: transparent #ffffff transparent transparent;
+      }
     }
   }
   &__link {

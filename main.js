@@ -27,12 +27,8 @@ btnToggle.addEventListener('click', toggleMobileMenu);
 
 function setupNav(e) {
   if (e.matches && navContent.getAttribute('aria-expanded') === 'false') {
-    // is mobile
-    console.log('is mobile');
-
     navContent.setAttribute('inert', '');
   } else {
-    console.log('is desktop');
     navContent.removeAttribute('inert');
     main.removeAttribute('inert');
     footer.removeAttribute('inert');
